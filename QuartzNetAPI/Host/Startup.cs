@@ -1,12 +1,15 @@
 ﻿using Host.Filters;
+using Host.IJobs;
 using Host.Managers;
 using Host.Services;
+using Host.Setup;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.OpenApi.Models;
+using Quartz.Spi;
 using Serilog;
 using Serilog.Events;
 using System.Collections.Generic;
@@ -57,8 +60,17 @@ namespace Host
                     t.Filters.Add<AuthorizationFilter>();
                 }).AddNewtonsoftJson();
 
+            services.AddScoped<HttpJob>();
+            services.AddScoped<MailJob>();
+            services.AddScoped<MqttJob>();
+            services.AddScoped<RabbitJob>();
             services.AddHostedService<HostedService>();
             services.AddSingleton<SchedulerCenter>();
+            services.AddSingleton<IJobFactory, JobFactory>();
+
+
+            services.AddEventBusSetup(Configuration);
+            services.AddNoticeProvider();
 
             services.AddSwaggerGen(options =>
             {
@@ -74,8 +86,6 @@ namespace Host
                 var xmlPath = Path.Combine(basePath, "Host.xml");
                 options.IncludeXmlComments(xmlPath);
             });
-
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

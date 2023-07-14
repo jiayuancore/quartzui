@@ -4,6 +4,9 @@ using Host.IJobs.Model;
 using Host.Model;
 using Newtonsoft.Json;
 using Quartz;
+using Robo.Notification.Provider;
+using Robo.Notification.Provider.Impl;
+using Robo.Utils.Events;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -15,8 +18,10 @@ namespace Host
 {
     public class HttpJob : JobBase<LogUrlModel>, IJob
     {
-        public HttpJob() : base(new LogUrlModel())
-        { }
+        //public HttpJob() : base(new LogUrlModel())
+        //{ }
+
+        public HttpJob(IMailProducer mail) : base(new LogUrlModel(),mail) { }
 
         public override async Task NextExecute(IJobExecutionContext context)
         {

@@ -12,13 +12,16 @@ using Quartz.Impl.AdoJobStore.Common;
 using Quartz.Impl.Matchers;
 using Quartz.Impl.Triggers;
 using Quartz.Simpl;
+using Quartz.Spi;
 using Quartz.Util;
 using Serilog;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using Talk.Extensions;
+using static Org.BouncyCastle.Math.EC.ECCurve;
 
 namespace Host
 {
@@ -35,11 +38,17 @@ namespace Host
         /// ADO 数据类型
         /// </summary>
         private string driverDelegateType;
+        private readonly string _dbProvider;
+        private readonly string _connectionString;
 
-        public SchedulerCenter()
+        public SchedulerCenter(IJobFactory factory, IConfiguration configuration)
         {
+            _dbProvider = configuration.GetSection("Quartz:dbProviderName")?.Value;
+            _connectionString = configuration.GetSection("Quartz:connectionString")?.Value;
+
             InitDriverDelegateType();
-            dbProvider = new DbProvider(AppConfig.DbProviderName, AppConfig.ConnectionString);
+            dbProvider = new DbProvider(_dbProvider, _connectionString);
+            jobFactory = factory;
         }
 
         /// <summary>
@@ -47,7 +56,7 @@ namespace Host
         /// </summary>
         private void InitDriverDelegateType()
         {
-            switch (AppConfig.DbProviderName)
+            switch (_dbProvider)
             {
                 case "SQLite-Microsoft":
                 case "SQLite":
@@ -96,6 +105,10 @@ namespace Host
         /// 调度器
         /// </summary>
         private IScheduler scheduler;
+        /// <summary>
+        /// 任务工厂
+        /// </summary>
+        private readonly IJobFactory jobFactory;
 
         /// <summary>
         /// 初始化Scheduler
@@ -117,6 +130,7 @@ namespace Host
                 };
                 DirectSchedulerFactory.Instance.CreateScheduler("bennyScheduler", "AUTO", new DefaultThreadPool(), jobStore);
                 scheduler = await SchedulerRepository.Instance.Lookup("bennyScheduler");
+                scheduler.JobFactory = jobFactory;
             }
         }
 

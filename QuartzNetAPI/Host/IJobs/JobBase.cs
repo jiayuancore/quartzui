@@ -4,6 +4,8 @@ using Host.IJobs.Model;
 using Host.Model;
 using Newtonsoft.Json;
 using Quartz;
+using Robo.Notification.Provider;
+using Robo.Notification.Provider.Msg;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -20,11 +22,17 @@ namespace Host.IJobs
         protected readonly int warnTime = 20;//接口请求超过多少秒记录警告日志 
         protected Stopwatch stopwatch = new Stopwatch();
         protected T LogInfo { get; private set; }
+        protected IMailProducer _mail;
         protected MailMessageEnum MailLevel = MailMessageEnum.None;
 
         public JobBase(T logInfo)
         {
             LogInfo = logInfo;
+        }
+        public JobBase(T logInfo,IMailProducer mail)
+        {
+            LogInfo = logInfo;
+            _mail = mail;
         }
 
         public async Task Execute(IJobExecutionContext context)
@@ -86,13 +94,20 @@ namespace Host.IJobs
         public async Task WarningAsync(string title, string msg, MailMessageEnum mailMessage)
         {
             Log.Logger.Warning(msg);
+
             if (mailMessage == MailMessageEnum.All)
             {
-                await new SetingController().SendMail(new SendMailModel()
+                await _mail.PublishMailRequestMsg(new MailRequestMsg()
                 {
-                    Title = $"任务调度-{title}【警告】消息",
-                    Content = msg
+                    Subject = $"任务调度-{title}【警告】消息",
+                    Body = msg,
+                    ToEmail = "jiayuan.wang@robo-technik.com",
                 });
+                //await new SetingController().SendMail(new SendMailModel()
+                //{
+                //    Title = $"任务调度-{title}【警告】消息",
+                //    Content = msg
+                //});
             }
         }
 
@@ -101,24 +116,37 @@ namespace Host.IJobs
             Log.Logger.Information(msg);
             if (mailMessage == MailMessageEnum.All)
             {
-                await new SetingController().SendMail(new SendMailModel()
+                await _mail.PublishMailRequestMsg(new MailRequestMsg()
                 {
-                    Title = $"任务调度-{title}消息",
-                    Content = msg
+                    Subject = $"任务调度-{title}消息",
+                    Body = msg,
+                    ToEmail = "jiayuan.wang@robo-technik.com",
                 });
+
+                //await new SetingController().SendMail(new SendMailModel()
+                //{
+                //    Title = $"任务调度-{title}消息",
+                //    Content = msg
+                //});
             }
         }
 
         public async Task ErrorAsync(string title, Exception ex, string msg, MailMessageEnum mailMessage)
         {
-            Log.Logger.Error(ex, msg);
             if (mailMessage == MailMessageEnum.Err || mailMessage == MailMessageEnum.All)
             {
-                await new SetingController().SendMail(new SendMailModel()
+                await _mail?.PublishMailRequestMsg(new MailRequestMsg()
                 {
-                    Title = $"任务调度-{title}【异常】消息",
-                    Content = msg
+                    Subject = $"任务调度-{title}【异常】消息",
+                    Body = msg,
+                    ToEmail = "jiayuan.wang@robo-technik.com"
                 });
+
+                //await new SetingController().SendMail(new SendMailModel()
+                //{
+                //    Title = $"任务调度-{title}【异常】消息",
+                //    Content = msg
+                //});
             }
         }
     }
