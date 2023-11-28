@@ -1,9 +1,14 @@
-﻿using Host.Filters;
+﻿using AntDesign.ProLayout;
+using Host.Data;
+using Host.Filters;
 using Host.IJobs;
 using Host.Managers;
+using Host.Quartz.Services;
+using Host.Quartz.Services.Impl;
 using Host.Services;
 using Host.Setup;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,9 +17,11 @@ using Microsoft.OpenApi.Models;
 using Quartz.Spi;
 using Serilog;
 using Serilog.Events;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 
 namespace Host
 {
@@ -53,13 +60,27 @@ namespace Host
             //services.AddRouting(r => r.SuppressCheckForUnhandledSecurityMetadata = true);
             #endregion
 
-            //services.AddMvc();
-            services.AddControllersWithViews(
+            // 注入Blazor Server
+            services.AddRazorPages();
+            services.AddServerSideBlazor();
+
+            // 注入Ant Design
+            services.AddAntDesign();
+            services.Configure<ProSettings>(Configuration.GetSection("ProSettings"));
+
+
+            services.AddScoped(sp => new HttpClient
+            {
+                BaseAddress = new Uri(sp.GetService<NavigationManager>().BaseUri)
+            });
+
+            services.AddControllers(
                 t =>
                 {
                     t.Filters.Add<AuthorizationFilter>();
                 }).AddNewtonsoftJson();
 
+            services.AddScoped<IJobService, JobService>();
             services.AddScoped<HttpJob>();
             services.AddScoped<MailJob>();
             services.AddScoped<MqttJob>();
@@ -68,7 +89,7 @@ namespace Host
             services.AddSingleton<SchedulerCenter>();
             services.AddSingleton<IJobFactory, JobFactory>();
 
-
+            // 注入事件总线
             services.AddEventBusSetup(Configuration);
             services.AddNoticeProvider();
 
@@ -98,21 +119,20 @@ namespace Host
 
             //app.UseMvc();
 
-            app.Use(async (context, next) =>
-            {
-                await next();
-                if (context.Response.StatusCode == 404 &&
-                   !Path.HasExtension(context.Request.Path.Value) &&
-                   !context.Request.Path.Value.StartsWith("/api/"))
-                {
-                    context.Request.Path = "/index.html";
-                    await next();
-                }
-            });
+            //app.Use(async (context, next) =>
+            //{
+            //    await next();
+            //    if (context.Response.StatusCode == 404 &&
+            //       !Path.HasExtension(context.Request.Path.Value) &&
+            //       !context.Request.Path.Value.StartsWith("/api/"))
+            //    {
+            //        context.Request.Path = "/index.html";
+            //        await next();
+            //    }
+            //});
 
             //app.UseMvcWithDefaultRoute();
 
-            app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -127,6 +147,8 @@ namespace Host
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapBlazorHub();
+                endpoints.MapFallbackToPage("/_Host");
             });
         }
 

@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Model\LogInfoModel.cs" />
+    <Compile Remove="Quartz\Model\LogInfoModel.cs" />
     <Compile Remove="ScheduleManage.cs" />
   </ItemGroup>
 
@@ -31,10 +31,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="AntDesign" Version="0.15.3" />
+    <PackageReference Include="AntDesign.Charts" Version="0.3.1" />
+    <PackageReference Include="AntDesign.ProLayout" Version="0.14.4.1" />
     <PackageReference Include="Dapper" Version="2.0.78" />
     <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
     <PackageReference Include="MailKit" Version="3.2.0" />
@@ -60,6 +59,25 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Components\GlobalHeader\RightContent.razor" />
+    <None Include="Pages\Counter.razor" />
+    <None Include="Pages\Error.cshtml" />
+    <None Include="Pages\Index.razor" />
+    <None Include="Pages\Todo.razor" />
+    <None Include="Pages\_Host.cshtml" />
+    <None Include="Shared\MainLayout.razor" />
+    <None Include="Shared\NavMenu.razor" />
+    <None Include="Shared\SurveyPrompt.razor" />
+    <None Include="wwwroot\assets\403.svg" />
+    <None Include="wwwroot\assets\logo.svg" />
+    <None Include="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+    <None Include="wwwroot\css\open-iconic\FONT-LICENSE" />
+    <None Include="wwwroot\css\open-iconic\font\fonts\open-iconic.svg" />
+    <None Include="wwwroot\css\open-iconic\ICON-LICENSE" />
+    <None Include="wwwroot\css\open-iconic\README.md" />
   </ItemGroup>
 
   <ItemGroup>

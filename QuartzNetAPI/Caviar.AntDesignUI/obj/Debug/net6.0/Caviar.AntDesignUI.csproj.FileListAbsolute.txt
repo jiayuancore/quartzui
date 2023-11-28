@@ -1,0 +1,5 @@
+C:\Users\Kevin.wang\source\repos\MyDemo\quartzui\QuartzNetAPI\Caviar.AntDesignUI\obj\Debug\net6.0\Caviar.AntDesignUI.csproj.AssemblyReference.cache
+C:\Users\Kevin.wang\source\repos\MyDemo\quartzui\QuartzNetAPI\Caviar.AntDesignUI\obj\Debug\net6.0\Caviar.AntDesignUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevin.wang\source\repos\MyDemo\quartzui\QuartzNetAPI\Caviar.AntDesignUI\obj\Debug\net6.0\Caviar.AntDesignUI.AssemblyInfoInputs.cache
+C:\Users\Kevin.wang\source\repos\MyDemo\quartzui\QuartzNetAPI\Caviar.AntDesignUI\obj\Debug\net6.0\Caviar.AntDesignUI.AssemblyInfo.cs
+C:\Users\Kevin.wang\source\repos\MyDemo\quartzui\QuartzNetAPI\Caviar.AntDesignUI\obj\Debug\net6.0\Caviar.AntDesignUI.csproj.CoreCompileInputs.cache

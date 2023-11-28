@@ -1,0 +1,184 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows,browser
+build_property.RootNamespace = Caviar.AntDesignUI
+build_property.RootNamespace = Caviar.AntDesignUI
+build_property.ProjectDir = C:\Users\Kevin.wang\source\repos\MyDemo\quartzui\QuartzNetAPI\Caviar.AntDesignUI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Kevin.wang\source\repos\MyDemo\quartzui\QuartzNetAPI\Caviar.AntDesignUI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/CodeGeneration/CodeFileGenerate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29kZUdlbmVyYXRpb25cQ29kZUZpbGVHZW5lcmF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/Enclosure/SysEnclosureIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5jbG9zdXJlXFN5c0VuY2xvc3VyZUluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/Exception/404/_404.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhjZXB0aW9uXDQwNFxfNDA0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/Menu/DataTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudVxEYXRhVGVtcGxhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/Menu/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudVxJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/MyUserDetails/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlVc2VyRGV0YWlsc1xJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/MyUserDetails/UpdateDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlVc2VyRGV0YWlsc1xVcGRhdGVEZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/Permission/PermissionFields.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVybWlzc2lvblxQZXJtaXNzaW9uRmllbGRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/Permission/PermissionMenus.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVybWlzc2lvblxQZXJtaXNzaW9uTWVudXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/Permission/PermissionUserRoles.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVybWlzc2lvblxQZXJtaXNzaW9uVXNlclJvbGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/Roles/RoleDataTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcUm9sZURhdGFUZW1wbGF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/Setting/LayoutSettings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ1xMYXlvdXRTZXR0aW5ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/UserGroup/SysUserGroupDataRange.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckdyb3VwXFN5c1VzZXJHcm91cERhdGFSYW5nZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/UserGroup/SysUserGroupDataTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckdyb3VwXFN5c1VzZXJHcm91cERhdGFUZW1wbGF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/UserGroup/SysUserGroupIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckdyb3VwXFN5c1VzZXJHcm91cEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/User/ChangePassword.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxDaGFuZ2VQYXNzd29yZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Pages/User/UserDataTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxVc2VyRGF0YVRlbXBsYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavAdvancedQuery.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdkFkdmFuY2VkUXVlcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavBreadcrumb.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdkJyZWFkY3J1bWIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavEmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdkVtcHR5TGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavFooter.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdkZvb3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavHighlightedCode.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdkhpZ2hsaWdodGVkQ29kZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavIconPanel.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdkljb25QYW5lbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavLanguage.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdkxhbmd1YWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavLoginCore.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdkxvZ2luQ29yZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavMainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdk1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavModalIcon.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdk1vZGFsSWNvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavPopover.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdlBvcG92ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavPopoverMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdlBvcG92ZXJNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavRuntime.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdlJ1bnRpbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdlNlYXJjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Shared/CavTableTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhdlRhYmxlVGVtcGxhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Template/ApplicationRoles/ApplicationRoleDataTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVcQXBwbGljYXRpb25Sb2xlc1xBcHBsaWNhdGlvblJvbGVEYXRhVGVtcGxhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Template/ApplicationRoles/ApplicationRoleIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVcQXBwbGljYXRpb25Sb2xlc1xBcHBsaWNhdGlvblJvbGVJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Template/ApplicationUsers/ApplicationUserIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVcQXBwbGljYXRpb25Vc2Vyc1xBcHBsaWNhdGlvblVzZXJJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Template/SysEnclosures/SysEnclosureIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVcU3lzRW5jbG9zdXJlc1xTeXNFbmNsb3N1cmVJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Template/SysLogs/SysLogIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVcU3lzTG9nc1xTeXNMb2dJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Template/SysUserGroups/SysUserGroupDataTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVcU3lzVXNlckdyb3Vwc1xTeXNVc2VyR3JvdXBEYXRhVGVtcGxhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/Template/SysUserGroups/SysUserGroupIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVcU3lzVXNlckdyb3Vwc1xTeXNVc2VyR3JvdXBJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin.wang/source/repos/MyDemo/quartzui/QuartzNetAPI/Caviar.AntDesignUI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
